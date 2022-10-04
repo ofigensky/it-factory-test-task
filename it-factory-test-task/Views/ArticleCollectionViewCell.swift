@@ -1,9 +1,3 @@
-//
-//  ArticleCollectionViewCell.swift
-//  it-factory-test-task
-//
-//  Created by Gleb Glushok on 03.10.2022.
-//
 
 import Foundation
 import UIKit
@@ -14,7 +8,7 @@ class ArticleCollectionViewCell: UICollectionViewCell {
     
     private let articleImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(systemName: "house")
         return imageView
     }()

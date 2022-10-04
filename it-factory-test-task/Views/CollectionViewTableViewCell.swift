@@ -1,9 +1,3 @@
-//
-//  CollectionTableViewCell.swift
-//  it-factory-test-task
-//
-//  Created by Gleb Glushok on 03.10.2022.
-//
 
 import Foundation
 import UIKit
@@ -11,6 +5,8 @@ import UIKit
 class CollectionViewTableViewCell: UITableViewCell {
     
     static let identifier = "CollectionViewTableViewCell"
+    var jsonCaller = JSONCaller()
+    private var sectionsModel: [Section] = [Section]()
         
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -26,6 +22,7 @@ class CollectionViewTableViewCell: UITableViewCell {
         contentView.addSubview(collectionView)
         collectionView.dataSource = self
         collectionView.delegate = self
+        initTableViewData()
     }
     
     required init?(coder: NSCoder) {
@@ -35,7 +32,26 @@ class CollectionViewTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         collectionView.frame = contentView.bounds
+    
     }
+    
+    func initTableViewData() {
+        jsonCaller.jsonCaller { [weak self] result in
+            switch result {
+            case .success(let sections):
+                self?.sectionsModel = sections
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+//    public func configure(with sections: [Section]) {
+//        self.sections = sections
+//        DispatchQueue.main.async { [weak self] in
+//            self?.collectionView.reloadData()
+//        }
+//    }
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -43,8 +59,9 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArticleCollectionViewCell.identifier, for: indexPath) as? ArticleCollectionViewCell else
         { return UICollectionViewCell() }
-        let title = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.width, height: 50))
-        title.text = "Random text"
+        let title = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.width, height: 70))
+        
+        title.numberOfLines = 0
         title.font = UIFont(name: "AvenirNext-Bold", size: 15)
         title.textAlignment = .center
         cell.contentView.addSubview(title)
@@ -52,6 +69,6 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return sectionsModel[section].itemsToShow
     }
 }

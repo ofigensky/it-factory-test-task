@@ -12,7 +12,7 @@
 		FADB5E5928EB0B2E00229019 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E5828EB0B2E00229019 /* HomeViewController.swift */; };
 		FADB5E5E28EB0B2F00229019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB5E5D28EB0B2F00229019 /* Assets.xcassets */; };
 		FADB5E6128EB0B2F00229019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB5E5F28EB0B2F00229019 /* LaunchScreen.storyboard */; };
-		FADB5E6928EB0EAA00229019 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6828EB0EAA00229019 /* Networking.swift */; };
+		FADB5E6928EB0EAA00229019 /* JSONCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6828EB0EAA00229019 /* JSONCaller.swift */; };
 		FADB5E6B28EB199500229019 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6A28EB199500229019 /* ArticlesModel.swift */; };
 		FADB5E6D28EB1EFD00229019 /* jsonviewer.json in Resources */ = {isa = PBXBuildFile; fileRef = FADB5E6C28EB1EFD00229019 /* jsonviewer.json */; };
 		FADB5E6F28EB294000229019 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6E28EB294000229019 /* CollectionViewTableViewCell.swift */; };
@@ -27,7 +27,7 @@
 		FADB5E5D28EB0B2F00229019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADB5E6028EB0B2F00229019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADB5E6228EB0B2F00229019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FADB5E6828EB0EAA00229019 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FADB5E6828EB0EAA00229019 /* JSONCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCaller.swift; sourceTree = "<group>"; };
 		FADB5E6A28EB199500229019 /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		FADB5E6C28EB1EFD00229019 /* jsonviewer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonviewer.json; sourceTree = "<group>"; };
 		FADB5E6E28EB294000229019 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		FAEE848D28EC413600AA0904 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				FADB5E6828EB0EAA00229019 /* Networking.swift */,
+				FADB5E6828EB0EAA00229019 /* JSONCaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADB5E6928EB0EAA00229019 /* Networking.swift in Sources */,
+				FADB5E6928EB0EAA00229019 /* JSONCaller.swift in Sources */,
 				FADB5E6F28EB294000229019 /* CollectionViewTableViewCell.swift in Sources */,
 				FADB5E5928EB0B2E00229019 /* HomeViewController.swift in Sources */,
 				FADB5E6B28EB199500229019 /* ArticlesModel.swift in Sources */,
