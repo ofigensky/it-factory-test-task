@@ -66,17 +66,49 @@
 			children = (
 				FADB5E5428EB0B2E00229019 /* AppDelegate.swift */,
 				FADB5E5628EB0B2E00229019 /* SceneDelegate.swift */,
-				FADB5E5828EB0B2E00229019 /* HomeViewController.swift */,
-				FADB5E6A28EB199500229019 /* ArticlesModel.swift */,
-				FADB5E6E28EB294000229019 /* CollectionViewTableViewCell.swift */,
-				FADB5E7028EB302700229019 /* ArticleCollectionViewCell.swift */,
-				FADB5E6828EB0EAA00229019 /* Networking.swift */,
+				FAEE848F28EC414200AA0904 /* Controller */,
+				FAEE848E28EC413E00AA0904 /* Model */,
+				FAEE848C28EC413100AA0904 /* Views */,
+				FAEE848D28EC413600AA0904 /* Managers */,
 				FADB5E5D28EB0B2F00229019 /* Assets.xcassets */,
 				FADB5E5F28EB0B2F00229019 /* LaunchScreen.storyboard */,
 				FADB5E6228EB0B2F00229019 /* Info.plist */,
 				FADB5E6C28EB1EFD00229019 /* jsonviewer.json */,
 			);
 			path = "it-factory-test-task";
+			sourceTree = "<group>";
+		};
+		FAEE848C28EC413100AA0904 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FADB5E6E28EB294000229019 /* CollectionViewTableViewCell.swift */,
+				FADB5E7028EB302700229019 /* ArticleCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAEE848D28EC413600AA0904 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FADB5E6828EB0EAA00229019 /* Networking.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAEE848E28EC413E00AA0904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADB5E6A28EB199500229019 /* ArticlesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAEE848F28EC414200AA0904 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FADB5E5828EB0B2E00229019 /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
