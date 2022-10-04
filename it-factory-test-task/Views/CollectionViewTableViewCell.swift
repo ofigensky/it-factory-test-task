@@ -45,13 +45,6 @@ class CollectionViewTableViewCell: UITableViewCell {
             }
         }
     }
-    
-//    public func configure(with sections: [Section]) {
-//        self.sections = sections
-//        DispatchQueue.main.async { [weak self] in
-//            self?.collectionView.reloadData()
-//        }
-//    }
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
