@@ -6,8 +6,8 @@
 
 import Foundation
 
-// MARK: - Articles
-struct Articles: Codable {
+// MARK: - ArticlesModel
+struct ArticlesModel: Codable {
     let sections: [Section]
 }
 

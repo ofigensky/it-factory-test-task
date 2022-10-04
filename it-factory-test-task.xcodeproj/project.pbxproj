@@ -13,7 +13,7 @@
 		FADB5E5E28EB0B2F00229019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB5E5D28EB0B2F00229019 /* Assets.xcassets */; };
 		FADB5E6128EB0B2F00229019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB5E5F28EB0B2F00229019 /* LaunchScreen.storyboard */; };
 		FADB5E6928EB0EAA00229019 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6828EB0EAA00229019 /* Networking.swift */; };
-		FADB5E6B28EB199500229019 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6A28EB199500229019 /* Model.swift */; };
+		FADB5E6B28EB199500229019 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6A28EB199500229019 /* ArticlesModel.swift */; };
 		FADB5E6D28EB1EFD00229019 /* jsonviewer.json in Resources */ = {isa = PBXBuildFile; fileRef = FADB5E6C28EB1EFD00229019 /* jsonviewer.json */; };
 		FADB5E6F28EB294000229019 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E6E28EB294000229019 /* CollectionViewTableViewCell.swift */; };
 		FADB5E7128EB302700229019 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E7028EB302700229019 /* ArticleCollectionViewCell.swift */; };
@@ -28,7 +28,7 @@
 		FADB5E6028EB0B2F00229019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADB5E6228EB0B2F00229019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADB5E6828EB0EAA00229019 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		FADB5E6A28EB199500229019 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FADB5E6A28EB199500229019 /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		FADB5E6C28EB1EFD00229019 /* jsonviewer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonviewer.json; sourceTree = "<group>"; };
 		FADB5E6E28EB294000229019 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		FADB5E7028EB302700229019 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -67,10 +67,10 @@
 				FADB5E5428EB0B2E00229019 /* AppDelegate.swift */,
 				FADB5E5628EB0B2E00229019 /* SceneDelegate.swift */,
 				FADB5E5828EB0B2E00229019 /* HomeViewController.swift */,
+				FADB5E6A28EB199500229019 /* ArticlesModel.swift */,
 				FADB5E6E28EB294000229019 /* CollectionViewTableViewCell.swift */,
 				FADB5E7028EB302700229019 /* ArticleCollectionViewCell.swift */,
 				FADB5E6828EB0EAA00229019 /* Networking.swift */,
-				FADB5E6A28EB199500229019 /* Model.swift */,
 				FADB5E5D28EB0B2F00229019 /* Assets.xcassets */,
 				FADB5E5F28EB0B2F00229019 /* LaunchScreen.storyboard */,
 				FADB5E6228EB0B2F00229019 /* Info.plist */,
@@ -153,7 +153,7 @@
 				FADB5E6928EB0EAA00229019 /* Networking.swift in Sources */,
 				FADB5E6F28EB294000229019 /* CollectionViewTableViewCell.swift in Sources */,
 				FADB5E5928EB0B2E00229019 /* HomeViewController.swift in Sources */,
-				FADB5E6B28EB199500229019 /* Model.swift in Sources */,
+				FADB5E6B28EB199500229019 /* ArticlesModel.swift in Sources */,
 				FADB5E5528EB0B2E00229019 /* AppDelegate.swift in Sources */,
 				FADB5E5728EB0B2E00229019 /* SceneDelegate.swift in Sources */,
 				FADB5E7128EB302700229019 /* ArticleCollectionViewCell.swift in Sources */,
