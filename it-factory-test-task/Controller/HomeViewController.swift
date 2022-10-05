@@ -8,7 +8,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var sectionsModel: [Section] = [Section]()
+    private var sectionsModel: [Section] = [Section]()
     var jsonCaller = JSONCaller()
     
     private let homeFeedTable: UITableView = {
@@ -19,11 +19,9 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
         view.addSubview(homeFeedTable)
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,7 +59,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else { return UITableViewCell() }
- 
+        
         return cell
     }
     

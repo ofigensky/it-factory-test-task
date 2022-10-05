@@ -6,16 +6,25 @@ class ArticleCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "ArticleCollectionViewCell"
     
-    private let articleImageView: UIImageView = {
+    private let cellImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(systemName: "house")
+        imageView.image = UIImage(systemName: "house") //заменить на изображения из json'a
         return imageView
+    }()
+    
+    private let cellTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "random" //заменить на title из json'a
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.addSubview(articleImageView)
+        contentView.addSubview(cellImageView)
+        contentView.addSubview(cellTitleLabel)
     }
     
     required init?(coder: NSCoder) {
@@ -24,6 +33,7 @@ class ArticleCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        articleImageView.frame = contentView.bounds
+        cellImageView.frame = contentView.bounds
+        cellTitleLabel.frame = contentView.bounds
     }
 }

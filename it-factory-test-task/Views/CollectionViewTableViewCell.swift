@@ -45,6 +45,10 @@ class CollectionViewTableViewCell: UITableViewCell {
             }
         }
     }
+    
+    func setupWithViewModel() {
+        // передавать из контроллера и обновлять коллекшн 
+    }
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -52,12 +56,7 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArticleCollectionViewCell.identifier, for: indexPath) as? ArticleCollectionViewCell else
         { return UICollectionViewCell() }
-        let title = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.width, height: 70))
         
-        title.numberOfLines = 0
-        title.font = UIFont(name: "AvenirNext-Bold", size: 15)
-        title.textAlignment = .center
-        cell.contentView.addSubview(title)
         return cell
     }
     
@@ -65,3 +64,11 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         return sectionsModel[section].itemsToShow
     }
 }
+
+
+//        let title = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.width, height: 70))
+//        title.text = sectionsModel[indexPath.section].items[indexPath.row].title
+//        title.numberOfLines = 0
+//        title.font = UIFont(name: "AvenirNext-Bold", size: 15)
+//        title.textAlignment = .center
+//        cell.contentView.addSubview(title)

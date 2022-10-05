@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1E244A28EE0233008DC5B0 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1E244928EE0233008DC5B0 /* ArticleViewModel.swift */; };
 		FADB5E5528EB0B2E00229019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E5428EB0B2E00229019 /* AppDelegate.swift */; };
 		FADB5E5728EB0B2E00229019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E5628EB0B2E00229019 /* SceneDelegate.swift */; };
 		FADB5E5928EB0B2E00229019 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB5E5828EB0B2E00229019 /* HomeViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1E244928EE0233008DC5B0 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		FADB5E5128EB0B2E00229019 /* it-factory-test-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "it-factory-test-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB5E5428EB0B2E00229019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADB5E5628EB0B2E00229019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1E244B28EE0236008DC5B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA1E244928EE0233008DC5B0 /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FADB5E4828EB0B2E00229019 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +79,7 @@
 				FAEE848F28EC414200AA0904 /* Controller */,
 				FAEE848E28EC413E00AA0904 /* Model */,
 				FAEE848C28EC413100AA0904 /* Views */,
+				FA1E244B28EE0236008DC5B0 /* ViewModel */,
 				FAEE848D28EC413600AA0904 /* Managers */,
 				FADB5E5D28EB0B2F00229019 /* Assets.xcassets */,
 				FADB5E5F28EB0B2F00229019 /* LaunchScreen.storyboard */,
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADB5E6928EB0EAA00229019 /* JSONCaller.swift in Sources */,
+				FA1E244A28EE0233008DC5B0 /* ArticleViewModel.swift in Sources */,
 				FADB5E6F28EB294000229019 /* CollectionViewTableViewCell.swift in Sources */,
 				FADB5E5928EB0B2E00229019 /* HomeViewController.swift in Sources */,
 				FADB5E6B28EB199500229019 /* ArticlesModel.swift in Sources */,
